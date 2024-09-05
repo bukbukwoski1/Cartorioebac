@@ -116,12 +116,15 @@ int main()
 	int opcao=0; //Definindo as variaveis
 	int laco=1;
 	char senhadigitada[10]="a";
+	int comparacao;
 	
 	printf("### Cartório da EBAC ###\n\n");
 	printf("Login de administrador!\n\nDigite a sua senha: ");
 	scanf("%s",senhadigitada);
 	
-	if(senhadigitada[10]=="admin")
+	comparacao = strcmp(senhadigitada, "admin");
+	
+	if(comparacao == 0)
 	{
 		
 	
