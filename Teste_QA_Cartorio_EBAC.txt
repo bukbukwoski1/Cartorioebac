@@ -1,0 +1,57 @@
+Relatório de Teste - Projeto de Registros de Nomes da EBAC
+
+_________________________________________________________________________________________________________
+
+Funções principais:
+
+INT MAIN:
+
+100% correta.
+REGISTRO:
+
+Inicia e encerra na mesma função.
+100% correta.
+CONSULTA:
+
+Inicia e encerra na mesma função.
+100% correta.
+DELETAR:
+
+Sempre retorna que o usuário não está no sistema (não impacta a funcionalidade para o cliente).
+Inicia e encerra na mesma função.
+100% correta.
+_________________________________________________________________________________________________________
+
+Testes:
+
+LOGIN:
+
+100% correto.
+INSERIR:
+
+Cenário de teste: 1234
+
+Menu funcionou corretamente.
+Criou o arquivo.
+CPF, Nome, Sobrenome e Cargo.
+Observação: O sistema ainda aceita qualquer entrada como CPF válido, o que pode causar cadastros inadequados no banco de dados.
+
+CONSULTA:
+
+Menu funcionou corretamente.
+Consulta a CPF inexistente: OK.
+Consulta a CPF existente: OK.
+Retorno ao menu: OK.
+DELETAR:
+
+Menu funcionou corretamente.
+
+100% funcional.
+
+ Observação: A mensagem exibida ao deletar um usuário é a mesma quando não encontra usuários no sistema. Recomenda-se melhorar essa distinção.
+
+_________________________________________________________________________________________________________
+
+Conclusão:
+
+Após análise do software, certifico que o projeto de Registros de Nomes da EBAC atende às premissas previstas pelo cliente. Algumas sugestões de otimização foram feitas, mas fica a critério do time de desenvolvimento implementar essas melhorias com a autorização do cliente.
