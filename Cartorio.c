@@ -70,7 +70,7 @@ int consulta()
 	char cpf[40];
 	char conteudo[200];
 	
-	printf("Digite o CPF a ser consultado: ");
+	printf("Digite o CPF a ser consultado: "); //recebendo qual usuário vai ser consultado
 	scanf("%s", cpf);
 	
 	FILE *file;
@@ -78,7 +78,7 @@ int consulta()
 	
 	if(file == NULL)
 	{
-		printf("Não foi possivel abrir o arquivo, não localizado!. \n");
+		printf("Não foi possivel abrir o arquivo!\n(CPF não cadastrado!)\n");
 	}
 	
 	while(fgets(conteudo, 200, file) != NULL)
@@ -117,17 +117,17 @@ int main()
 	int laco=1;
 	char senhadigitada[10]="a";
 	int comparacao;
+	setlocale (LC_ALL, "portuguese");
 	
 	printf("### Cartório da EBAC ###\n\n");
 	printf("Login de administrador!\n\nDigite a sua senha: ");
 	scanf("%s",senhadigitada);
 	
 	comparacao = strcmp(senhadigitada, "admin");
-	
 	if(comparacao == 0)
 	{
 		
-	
+		system ("cls");
 		for(laco=1;laco=1;)//(x=1;x=1 == Repetição) Criando laço de retorno; incremento opcional, não se aplica nesse caso. 
 		{
 		
